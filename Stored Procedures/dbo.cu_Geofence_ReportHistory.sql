@@ -1,0 +1,41 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+
+
+CREATE PROCEDURE [dbo].[cu_Geofence_ReportHistory]
+(
+		@vids NVARCHAR(MAX),
+		@geofenceIds NVARCHAR(MAX),
+		@uid UNIQUEIDENTIFIER,
+		@sdate DATETIME,
+		@edate DATETIME
+)
+AS
+BEGIN
+	--DECLARE @vids NVARCHAR(MAX),
+	--		@geofenceIds NVARCHAR(MAX),
+	--		@sdate DATETIME,
+	--		@edate DATETIME,
+	--		@uid UNIQUEIDENTIFIER
+
+	--SET @vids = N'8F2224CE-C44B-44D1-B661-4CFE0337B903'
+	--SET @sdate = '2010-10-05 00:07:00'
+	--SET @edate = '2010-10-05 23:59:00'
+	--SET @uid = N'7baee9c3-1b0e-49fc-a98d-d5a2d6adf8ca'
+	----SET @geofenceIds = N'B9C383E9-E2DF-42DB-80E3-FF1AF0E74C5F,0F4F0BAC-9F88-4E13-9FB8-C5CC7EDD4FAA,BEA25C44-C488-4129-ABC8-505D4A0D8FFB,1CA7471F-3A17-4F9F-B02F-4BED183F8E61'
+	--SET @geofenceIds = N'B9C383E9-E2DF-42DB-80E3-FF1AF0E74C5F,1CA7471F-3A17-4F9F-B02F-4BED183F8E61'
+
+
+	EXECUTE [dbo].[proc_ReportGeofenceHistory] 
+	   @vids
+	  ,@geofenceIds
+	  ,@sdate
+	  ,@edate
+	  ,@uid
+
+END
+GO

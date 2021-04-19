@@ -1,0 +1,6 @@
+INSERT INTO [dbo].[VideoStatusType] ([VideoStatusTypeId], [Name], [Description], [LastModified], [Archived]) VALUES (0, 'Unknown', 'Status unknown', '2015-06-06 14:40:51.810', 0)
+INSERT INTO [dbo].[VideoStatusType] ([VideoStatusTypeId], [Name], [Description], [LastModified], [Archived]) VALUES (1, 'Complete', 'Video is available to stream', '2015-06-06 14:40:51.810', 0)
+INSERT INTO [dbo].[VideoStatusType] ([VideoStatusTypeId], [Name], [Description], [LastModified], [Archived]) VALUES (2, 'Incomplete', 'Video upload in progress', '2015-06-06 14:40:51.810', 0)
+INSERT INTO [dbo].[VideoStatusType] ([VideoStatusTypeId], [Name], [Description], [LastModified], [Archived]) VALUES (3, 'Requested', 'Video upload requested', '2015-06-06 14:40:51.810', 0)
+INSERT INTO [dbo].[VideoStatusType] ([VideoStatusTypeId], [Name], [Description], [LastModified], [Archived]) VALUES (4, 'Available', 'Video available for upload', '2015-06-06 14:40:51.810', 0)
+INSERT INTO [dbo].[VideoStatusType] ([VideoStatusTypeId], [Name], [Description], [LastModified], [Archived]) VALUES (5, 'Removed', 'Video removed', '2015-06-06 14:40:51.810', 0)

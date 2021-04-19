@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[Status]
+(
+[StatusId] [smallint] NOT NULL IDENTITY(1, 1),
+[StatusString] [varchar] (50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[Status] ADD CONSTRAINT [PK_Status] PRIMARY KEY CLUSTERED  ([StatusId]) WITH (FILLFACTOR=80) ON [PRIMARY]
+GO
+CREATE NONCLUSTERED INDEX [IX_Status] ON [dbo].[Status] ([StatusString]) WITH (FILLFACTOR=80) ON [PRIMARY]
+GO

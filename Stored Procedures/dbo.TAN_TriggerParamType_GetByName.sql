@@ -1,0 +1,40 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS OFF
+GO
+
+/*
+----------------------------------------------------------------------------------------------------
+
+-- Created By: RTL Systems Ltd (http://www.rtlsystems.co.uk)
+-- Purpose: Select records from the TAN_TriggerParamType table through an index
+----------------------------------------------------------------------------------------------------
+*/
+
+
+CREATE PROCEDURE [dbo].[TAN_TriggerParamType_GetByName]
+(
+
+	@Name varchar (255)  
+)
+AS
+
+
+				SELECT
+					[TriggerParamTypeId],
+					[Name],
+					[Description],
+					[Archived],
+					[LastOperation]
+				FROM
+					[dbo].[TAN_TriggerParamType]
+				WHERE
+					[Name] = @Name
+                                AND
+                            Archived = 0
+				SELECT @@ROWCOUNT
+					
+			
+
+
+GO

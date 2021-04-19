@@ -1,0 +1,17 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE PROCEDURE [dbo].[cuf_Vehicle_RaiseSpeedingDispute]
+(
+	@eid BIGINT,
+	@uid UNIQUEIDENTIFIER,
+	@comment NVARCHAR(MAX)
+)
+AS
+BEGIN
+	SELECT 1 AS Result
+END
+
+GO

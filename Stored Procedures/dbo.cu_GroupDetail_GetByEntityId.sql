@@ -1,0 +1,23 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+
+CREATE PROC [dbo].[cu_GroupDetail_GetByEntityId]
+(
+	@entityId UNIQUEIDENTIFIER
+)
+AS
+BEGIN
+	--DECLARE @entityId UNIQUEIDENTIFIER
+
+	--SET @entityId = N'6847C2DE-3AD8-4F66-A2D7-D87A239BDF5C'
+
+	SELECT *
+	FROM dbo.[GroupDetail]
+	WHERE EntityDataId = @entityId
+END
+
+
+GO

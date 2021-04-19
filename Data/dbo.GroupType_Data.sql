@@ -1,0 +1,7 @@
+INSERT INTO [dbo].[GroupType] ([GroupTypeId], [GroupTypeName], [GroupTypeDescription]) VALUES (0, N'Undefined', N'Unknown group type')
+INSERT INTO [dbo].[GroupType] ([GroupTypeId], [GroupTypeName], [GroupTypeDescription]) VALUES (1, N'Vehicles', N'Group of vehicles')
+INSERT INTO [dbo].[GroupType] ([GroupTypeId], [GroupTypeName], [GroupTypeDescription]) VALUES (2, N'Drivers', N'Group of drivers')
+INSERT INTO [dbo].[GroupType] ([GroupTypeId], [GroupTypeName], [GroupTypeDescription]) VALUES (3, N'Trailers', N'Group of trailers')
+INSERT INTO [dbo].[GroupType] ([GroupTypeId], [GroupTypeName], [GroupTypeDescription]) VALUES (4, N'Geofences', N'Group of geofences')
+INSERT INTO [dbo].[GroupType] ([GroupTypeId], [GroupTypeName], [GroupTypeDescription]) VALUES (5, N'Customers', N'Group of customers')
+INSERT INTO [dbo].[GroupType] ([GroupTypeId], [GroupTypeName], [GroupTypeDescription]) VALUES (6, N'Users', N'Group of users')

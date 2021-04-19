@@ -1,0 +1,15 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[ClearLogs]
+AS
+BEGIN
+	SET NOCOUNT ON;
+
+	DELETE FROM [dbo].[CategoryLog]
+	DELETE FROM [dbo].[Log]
+    DELETE FROM [dbo].[Category]
+END
+
+GO

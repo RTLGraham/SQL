@@ -1,0 +1,5 @@
+INSERT INTO [dbo].[GeofenceType] ([GeofenceTypeId], [Name], [Description], [Archived]) VALUES (1, N'Circle', N'A circle with a single centre point and radius', 0)
+INSERT INTO [dbo].[GeofenceType] ([GeofenceTypeId], [Name], [Description], [Archived]) VALUES (2, N'Shape', N'A pre-defined shape', 0)
+INSERT INTO [dbo].[GeofenceType] ([GeofenceTypeId], [Name], [Description], [Archived]) VALUES (3, N'FreeHand', N'Drawn on screen', 0)
+INSERT INTO [dbo].[GeofenceType] ([GeofenceTypeId], [Name], [Description], [Archived]) VALUES (4, N'Site', N'Site - not shown on the standard geofence selection', 0)
+INSERT INTO [dbo].[GeofenceType] ([GeofenceTypeId], [Name], [Description], [Archived]) VALUES (5, N'DN Site', N'Delivery Notification Site', 0)

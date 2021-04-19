@@ -1,0 +1,18 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[cuf_Vehicle_Report_SiteVisits]
+	@siteids NVARCHAR(MAX),
+	@vids NVARCHAR(MAX),
+	@sdate DATETIME,
+	@edate DATETIME,
+	@uid UNIQUEIDENTIFIER
+AS
+BEGIN
+	SET NOCOUNT ON;
+	SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+	
+	EXECUTE dbo.[proc_ReportSiteVisits] @siteids, @vids, @sdate, @edate, @uid;
+END;
+GO

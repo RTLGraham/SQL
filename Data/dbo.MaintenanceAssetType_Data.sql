@@ -1,0 +1,6 @@
+INSERT INTO [dbo].[MaintenanceAssetType] ([AssetTypeId], [Name], [Description], [LastOperation], [Archived], [Severity]) VALUES (1, N'Telematics Device', N'IVH Unit tracker number', '2015-11-02 14:17:00.000', 0, 1)
+INSERT INTO [dbo].[MaintenanceAssetType] ([AssetTypeId], [Name], [Description], [LastOperation], [Archived], [Severity]) VALUES (2, N'SS1', N'SS1 reference number', '2015-11-02 14:18:00.000', 0, 1)
+INSERT INTO [dbo].[MaintenanceAssetType] ([AssetTypeId], [Name], [Description], [LastOperation], [Archived], [Severity]) VALUES (3, N'Camera', N'Camera serial number', '2015-11-02 14:18:00.000', 0, 1)
+INSERT INTO [dbo].[MaintenanceAssetType] ([AssetTypeId], [Name], [Description], [LastOperation], [Archived], [Severity]) VALUES (4, N'Remote Tachograph Download', N'Remote Tachograph Download hardware', '2018-09-09 21:53:00.000', 0, 1)
+INSERT INTO [dbo].[MaintenanceAssetType] ([AssetTypeId], [Name], [Description], [LastOperation], [Archived], [Severity]) VALUES (5, N'Device Configuration', N'Device is misconfigured', '2018-09-09 21:53:00.000', 0, 2)
+INSERT INTO [dbo].[MaintenanceAssetType] ([AssetTypeId], [Name], [Description], [LastOperation], [Archived], [Severity]) VALUES (6, N'Temperature Monitoring', N'Temperature monitoring system', '2018-09-09 21:53:00.000', 0, 1)

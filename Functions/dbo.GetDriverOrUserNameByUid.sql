@@ -1,0 +1,33 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+
+CREATE FUNCTION [dbo].[GetDriverOrUserNameByUid]
+(
+	@uid UNIQUEIDENTIFIER
+)
+RETURNS NVARCHAR(MAX)
+AS
+BEGIN
+
+	--DECLARE @uid UNIQUEIDENTIFIER
+	--SET @uid = N'28B094CD-FD99-4A89-9E7D-ADDF0CD0E090'
+
+	DECLARE @uname NVARCHAR(MAX)
+	DECLARE @dname NVARCHAR(MAX)
+	
+	SELECT @dname = ISNULL(FirstName, '') + CASE WHEN FirstName IS NULL THEN '' ELSE ' ' END + Surname
+	FROM dbo.Driver
+	WHERE DriverId = @uid
+
+	SELECT @uname = ISNULL(FirstName, '') + CASE WHEN FirstName IS NULL THEN '' ELSE ' ' END + Surname
+	FROM dbo.[User]
+	WHERE UserID = @uid
+	
+	RETURN ISNULL(@dname, @uname)
+END
+
+
+
+GO

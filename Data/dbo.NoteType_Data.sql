@@ -1,0 +1,3 @@
+INSERT INTO [dbo].[NoteType] ([NoteTypeId], [NoteTypeName], [NoteTypeDescription], [LastModified], [Archived]) VALUES (0, N'Undefined', N'Undefined', '2010-01-14 10:18:20.823', 0)
+INSERT INTO [dbo].[NoteType] ([NoteTypeId], [NoteTypeName], [NoteTypeDescription], [LastModified], [Archived]) VALUES (1, N'Notification', N'A note used for notification purposes which will be removed (archived) when acted upon', '2010-01-14 10:17:55.880', 0)
+INSERT INTO [dbo].[NoteType] ([NoteTypeId], [NoteTypeName], [NoteTypeDescription], [LastModified], [Archived]) VALUES (2, N'Static', N'A static note that exists on an entity', '2010-01-14 10:18:11.753', 0)

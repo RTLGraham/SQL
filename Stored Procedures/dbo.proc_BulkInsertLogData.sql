@@ -1,0 +1,10 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROC [dbo].[proc_BulkInsertLogData]
+AS
+
+INSERT INTO LogData SELECT * FROM LogDataTemp WHERE Archived = 0
+
+GO

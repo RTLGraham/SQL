@@ -1,0 +1,3 @@
+INSERT INTO [dbo].[LW_LoneWorkerResponseType] ([ResponseTypeId], [Name], [Description], [Archived], [LastOperation]) VALUES (1, 'Acknowledged', 'Lone Worker Notification has been acknowledged', 0, '2017-08-16 16:00:00.000')
+INSERT INTO [dbo].[LW_LoneWorkerResponseType] ([ResponseTypeId], [Name], [Description], [Archived], [LastOperation]) VALUES (2, 'Rejected', 'Lone Worker Notification has been rejected', 0, '2017-08-16 16:00:00.000')
+INSERT INTO [dbo].[LW_LoneWorkerResponseType] ([ResponseTypeId], [Name], [Description], [Archived], [LastOperation]) VALUES (3, 'False Alarm', 'Lone Worker Notification has been deemed as a false alarm', 0, '2017-08-16 16:00:00.000')

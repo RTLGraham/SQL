@@ -1,0 +1,7 @@
+INSERT INTO [dbo].[GeofenceCategory] ([GeofenceCategoryId], [Name], [Description], [Colour], [LastModified], [Archived]) VALUES (1, N'Category 1', NULL, N'FFFF0000', '2010-07-12 10:59:23.690', 0)
+INSERT INTO [dbo].[GeofenceCategory] ([GeofenceCategoryId], [Name], [Description], [Colour], [LastModified], [Archived]) VALUES (2, N'Category 2', NULL, N'FFFFFF00', '2010-07-12 10:59:32.453', 0)
+INSERT INTO [dbo].[GeofenceCategory] ([GeofenceCategoryId], [Name], [Description], [Colour], [LastModified], [Archived]) VALUES (3, N'Category 3', NULL, N'FFFF00FF', '2010-07-12 10:59:39.993', 0)
+INSERT INTO [dbo].[GeofenceCategory] ([GeofenceCategoryId], [Name], [Description], [Colour], [LastModified], [Archived]) VALUES (4, N'Category 4', NULL, N'FF008000', '2010-07-12 10:59:47.947', 0)
+INSERT INTO [dbo].[GeofenceCategory] ([GeofenceCategoryId], [Name], [Description], [Colour], [LastModified], [Archived]) VALUES (5, N'Category 5', NULL, N'FFFFA500', '2010-07-12 11:00:00.137', 0)
+INSERT INTO [dbo].[GeofenceCategory] ([GeofenceCategoryId], [Name], [Description], [Colour], [LastModified], [Archived]) VALUES (6, N'Category 6', NULL, N'FF800080', '2010-07-12 11:00:10.150', 0)
+INSERT INTO [dbo].[GeofenceCategory] ([GeofenceCategoryId], [Name], [Description], [Colour], [LastModified], [Archived]) VALUES (7, N'Category 7', NULL, N'FF0000FF', '2010-07-12 11:00:20.037', 0)

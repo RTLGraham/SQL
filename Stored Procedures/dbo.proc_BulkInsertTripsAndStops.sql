@@ -1,0 +1,10 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROC [dbo].[proc_BulkInsertTripsAndStops]
+AS
+
+INSERT INTO TripsAndStops SELECT * FROM TripsAndStopsTemp WHERE Archived = 0
+
+GO
