@@ -11,16 +11,6 @@ GO
 CREATE PROCEDURE [dbo].[proc_TAN_AnalyseTriggers]
 AS
 
--- First of all check whether or not this process is still running
--- by trying to create a temprary table
-SELECT MyVar = 5 INTO #TAN_Analyze_Running
-
-IF @@ERROR <> 0
-BEGIN
-	-- do nothing!
-	SELECT 0
-END ELSE
-
 BEGIN
 
 	SET NOCOUNT ON;
@@ -295,8 +285,6 @@ BEGIN
 	FROM dbo.TAN_TriggerEvent
 	WHERE ProcessInd IN (3,4,5)
 	
-	-- Delete temporary table to indicate job has completed
-	DROP TABLE #TAN_Analyze_Running
 END
 
 
