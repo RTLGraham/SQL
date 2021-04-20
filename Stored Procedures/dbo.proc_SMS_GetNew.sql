@@ -9,6 +9,8 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 
+	-- Gets SMS data for Data Dispatcher
+
 	SELECT SMSId ,
            SMSSourceId ,
            SMSStatusId ,
